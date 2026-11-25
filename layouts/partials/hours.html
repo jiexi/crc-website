@@ -1,7 +1,28 @@
- <p>
+<p id="notice" style="color: red; display: none; margin: 0 0 1em; padding: 8px; border: 2px dashed red;"><b>
+  <!-- CHANGE BELOW THIS -->
+  Closed 11/26 - 11/28. Happy Thanksgiving!
+  <!-- CHANGE ABOVE THIS -->
+</b></p>
+<p>
     <b>Monday - Fridays:</b> 8am - 4pm<br><br>
     <b>Saturday:</b> 8am - 2pm<br><br>
     <b>Sunday:</b> Closed<br><br>
+<script>
+(function () {
+  // CHANGE BELOW THIS
+  // This is what date the message will be displayed until.
+  var year = 2026;
+  var month = 11;
+  var day = 1;
+  // CHANGE ABOVE THIS
+  var cutoff = new Date(year, month + 1, day);
+  if (new Date() < cutoff) {
+    var notice = document.getElementById("notice");
+    if (notice) notice.style.display = "block";
+  }
+})();
+</script>
+
 <b><p style="color: red;">You must be in the parking lot queue 5 minutes before stated closing time!</p></b><br>
 <b>Holidays: We are closed for most holidays, but be sure to call and confirm if you have any doubts.<br>
   <br>
