@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{ .Title }}</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="keywords" content="{{ .Site.Params.keywords }}" />
+</head>
+<body>
+<div id="background_texture">
+  <div id="leaf">
+    <div id="wrapper">
+{{ partial "header.html" . }}
+      <div class="top"><img src="images/content_box_top.png" width="940" height="10" alt="top" /></div>
+      <div id="content_bg">
+        <div id="left_column">
+{{ block "main" . }}{{ end }}
+        </div>
+{{ partial "sidebar.html" . }}
+        <hr class="clear" />
+      </div>
+      <div class="bottom"><img src="images/content_box_bottom.png" width="940" height="21" alt="bottom" /></div>
+    </div>
+{{ partial "footer.html" . }}
+  </div>
+</div>
+</body>
+</html>

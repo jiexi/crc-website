@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) http://concordrecyclingcenter.com [R=301,L] 

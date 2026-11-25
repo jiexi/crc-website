@@ -1,0 +1,22 @@
+ <p>
+<?php if(mktime(0,0,0,7,5,2022) > strtotime('now')) {
+ ?>
+ <p
+  style="
+    border: 3px dashed red;
+    padding: 10px;
+    /* font-size: 15px; */
+    color: red;"
+>
+    <b>Closed on July 4th!</b><br>
+</p><br>
+<?php } ?>
+    <b>Monday - Fridays:</b> 8am - 4pm<br><br>
+    <b>Saturday:</b> 8am - 2pm<br><br>
+    <b>Sunday:</b> Closed<br><br>
+<b><p style="color: red;">You must be in the parking lot queue 5 minutes before stated closing time!</p></b><br>      
+<b>Holidays: We are closed for most holidays, but be sure to call and confirm if you have any doubts.<br>
+  <br>
+
+    <br><b>Visit our <a href="https://www.facebook.com/concordrecyclingcenter/">Facebook page</a> for latest news. Thank you.</b><br>
+</p>

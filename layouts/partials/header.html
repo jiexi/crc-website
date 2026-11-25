@@ -1,0 +1,14 @@
+<div id="header">
+        <div style="float:left;width:800px;" id="logo"><br><br><span style="font-size:30px;color:#8F6835;">Concord </span><span style="font-size:30px;color:#A8B148;">Recycling Center</span> <div style="float:right;">
+</div></div>
+      </div>
+
+      <div id="header_menu">
+
+  <ul id="navigation">
+          {{- $last := sub (len .Site.Menus.main) 1 }}
+          {{- range $index, $item := .Site.Menus.main }}
+          <li><a href="{{ $item.URL }}"{{ if eq $index $last }} style="background-image:none;"{{ end }}>{{ $item.Name }}</a></li>
+          {{- end }}
+        </ul>
+		</div>
